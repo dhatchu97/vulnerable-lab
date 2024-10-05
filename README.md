@@ -64,7 +64,8 @@ Nikto: Perform a web vulnerability scan against the target web applications.
 
 bash:
 nikto -h [target IP or URL]
-2. Exploitation
+
+### 2. **Exploitation**
 Metasploit: Exploit vulnerabilities in Metasploitable 2 to gain shell access.
 
 bash:
@@ -75,10 +76,10 @@ set LHOST [your attacker IP]
 exploit
 Burp Suite: Identify and exploit SQL Injection and XSS vulnerabilities on OWASP Juice Shop and DVWA.
 
-3. Network Traffic Analysis
+### 3. **Network Traffic Analysis**
 Wireshark/Tcpdump: Capture and analyze network traffic during attacks.
 
-bash:
+#### bash:
 tcpdump -i eth0 -w traffic_capture.pcap
 Key Outcomes:
 Identifying Vulnerabilities: Discovered common web vulnerabilities such as SQL Injection, XSS, and weak credentials.
@@ -88,29 +89,11 @@ Exploitation Techniques: Gained access to target machines using Metasploit and m
 Mitigation Strategies: Suggested fixes like input validation, secure password policies, and firewall configuration.
 
 
-Challenges Faced
+#### Challenges Faced
 Network Connectivity: Solved issues with bridged network configuration between virtual machines.
 
 Firewall Rules: Adjusted firewall rules on the virtual machines to allow necessary traffic.
 
-Lessons Learned:
-Gained hands-on experience with network configuration and troubleshooting.
-Developed a deeper understanding of web application vulnerabilities and mitigation strategies.
-Improved proficiency in using industry-standard penetration testing tools.
-Future Work
-Extend the lab by adding more vulnerable machines and new scenarios.
-Automate vulnerability scans and report generation using Python scripts.
-Repository Contents
-setup.md: Detailed instructions on setting up the virtual machines and network.
-attack_scenarios.md: Step-by-step guide on performing vulnerability assessments and exploitation.
-screenshots/: Folder containing screenshots from the attack scenarios.
-scripts/: Custom scripts used during penetration testing.
-How to Use This Lab
-Clone the repository:
-
-Follow the instructions in the setup.md file to create and configure the lab environment.
-
-Use the attack_scenarios.md to conduct vulnerability assessments and penetration tests.
 
 Contact
 Name: Dhatchina Moorthy G
