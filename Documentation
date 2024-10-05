@@ -1,0 +1,43 @@
+Overview:
+This project involves designing and configuring a home lab environment to simulate real-world vulnerabilities and conduct penetration testing. The lab was created using virtual machines, intentionally vulnerable web applications, and security tools like Burp Suite, Nmap, and Metasploit to identify, exploit, and mitigate vulnerabilities.
+
+Objective:
+
+To create a controlled, vulnerable environment for testing and improving skills in penetration testing.
+To practice using industry-standard tools for vulnerability assessment and exploitation.
+To gain hands-on experience in identifying, exploiting, and mitigating common vulnerabilities.
+
+Environment Setup:
+Virtualization Platform:
+
+Tools Used: VirtualBox as the virtualization platform.
+Multiple virtual machines (VMs) were created to simulate a network environment.
+Virtual Machines Used:
+
+Kali Linux: Used as the attacker machine, preloaded with various pentesting tools.
+Metasploitable 2: A vulnerable Linux-based operating system.
+OWASP Juice Shop: A vulnerable web application for web security testing.
+DVWA (Damn Vulnerable Web App): Used for testing common web vulnerabilities.
+Network Configuration:
+
+Network Type: Configured the virtual machines to communicate on a bridged network to simulate real-world environments.
+Ensured connectivity between the attacker (Kali Linux) and target machines (Metasploitable, OWASP Juice Shop, DVWA).
+Attack Scenarios:
+Vulnerability Scanning:
+Conducted network and web vulnerability scans using Nmap and Nikto.
+Identified open ports and services running on the target systems.
+Exploitation:
+Used Metasploit Framework to exploit known vulnerabilities in Metasploitable, achieving remote shell access.
+Performed SQL Injection and Cross-Site Scripting (XSS) attacks on OWASP Juice Shop using Burp Suite and OWASP ZAP.
+Network-Based Attacks:
+Used Wireshark and Tcpdump to capture network traffic and analyze packets for potential data leaks and vulnerabilities.
+Mitigation:
+Identified remediation techniques such as input validation, secure coding practices, and patching.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Tools and Technologies Used:
+Penetration Testing Tools: Burp Suite, Metasploit, OWASP ZAP, Nmap, Nikto, SQLMap
+Network Monitoring Tools: Wireshark, Tcpdump
+Operating Systems: Kali Linux, Metasploitable, OWASP Juice Shop (Docker-based), DVWA
+Scripting: Python for automation and custom scripts during testing
